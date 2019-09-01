@@ -10,6 +10,20 @@
 		E12998F2231C1CBA00DD2AB1 /* RMTableViewDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12998E8231C1CB900DD2AB1 /* RMTableViewDataSource.framework */; };
 		E12998F7231C1CBA00DD2AB1 /* RMTableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12998F6231C1CBA00DD2AB1 /* RMTableViewDataSourceTests.swift */; };
 		E12998F9231C1CBA00DD2AB1 /* RMTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E12998EB231C1CB900DD2AB1 /* RMTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1299916231C1CFB00DD2AB1 /* RMTableViewDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299903231C1CFB00DD2AB1 /* RMTableViewDataSourceViewController.swift */; };
+		E1299917231C1CFB00DD2AB1 /* PeopleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299904231C1CFB00DD2AB1 /* PeopleSource.swift */; };
+		E1299918231C1CFB00DD2AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1299905231C1CFB00DD2AB1 /* Assets.xcassets */; };
+		E1299919231C1CFB00DD2AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1299906231C1CFB00DD2AB1 /* LaunchScreen.storyboard */; };
+		E129991B231C1CFB00DD2AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E129990A231C1CFB00DD2AB1 /* AppDelegate.swift */; };
+		E129991C231C1CFB00DD2AB1 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E129990B231C1CFB00DD2AB1 /* PersonTableViewCell.swift */; };
+		E129991E231C1CFB00DD2AB1 /* CellRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = E129990E231C1CFB00DD2AB1 /* CellRetriever.swift */; };
+		E129991F231C1CFB00DD2AB1 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E129990F231C1CFB00DD2AB1 /* TableViewDataSource.swift */; };
+		E1299920231C1CFB00DD2AB1 /* SearchSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299911231C1CFB00DD2AB1 /* SearchSource.swift */; };
+		E1299921231C1CFB00DD2AB1 /* UISearchBarSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299912231C1CFB00DD2AB1 /* UISearchBarSource.swift */; };
+		E1299922231C1CFB00DD2AB1 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299913231C1CFB00DD2AB1 /* CellIdentifiable.swift */; };
+		E1299923231C1CFB00DD2AB1 /* TableViewContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299914231C1CFB00DD2AB1 /* TableViewContents.swift */; };
+		E1299924231C1CFB00DD2AB1 /* CellBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1299915231C1CFB00DD2AB1 /* CellBindable.swift */; };
+		E1BB9AC5231C396F00A59FB3 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = E1BB9AC4231C396F00A59FB3 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +43,20 @@
 		E12998F1231C1CBA00DD2AB1 /* RMTableViewDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMTableViewDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12998F6231C1CBA00DD2AB1 /* RMTableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMTableViewDataSourceTests.swift; sourceTree = "<group>"; };
 		E12998F8231C1CBA00DD2AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1299903231C1CFB00DD2AB1 /* RMTableViewDataSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTableViewDataSourceViewController.swift; sourceTree = "<group>"; };
+		E1299904231C1CFB00DD2AB1 /* PeopleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSource.swift; sourceTree = "<group>"; };
+		E1299905231C1CFB00DD2AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1299907231C1CFB00DD2AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E129990A231C1CFB00DD2AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E129990B231C1CFB00DD2AB1 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		E129990E231C1CFB00DD2AB1 /* CellRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRetriever.swift; sourceTree = "<group>"; };
+		E129990F231C1CFB00DD2AB1 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		E1299911231C1CFB00DD2AB1 /* SearchSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSource.swift; sourceTree = "<group>"; };
+		E1299912231C1CFB00DD2AB1 /* UISearchBarSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarSource.swift; sourceTree = "<group>"; };
+		E1299913231C1CFB00DD2AB1 /* CellIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		E1299914231C1CFB00DD2AB1 /* TableViewContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContents.swift; sourceTree = "<group>"; };
+		E1299915231C1CFB00DD2AB1 /* CellBindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBindable.swift; sourceTree = "<group>"; };
+		E1BB9AC4231C396F00A59FB3 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +99,9 @@
 		E12998EA231C1CB900DD2AB1 /* RMTableViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				E1BB9AC4231C396F00A59FB3 /* Readme.md */,
+				E129990D231C1CFB00DD2AB1 /* Source */,
+				E1299902231C1CFB00DD2AB1 /* Example */,
 				E12998EB231C1CB900DD2AB1 /* RMTableViewDataSource.h */,
 				E12998EC231C1CB900DD2AB1 /* Info.plist */,
 			);
@@ -84,6 +115,41 @@
 				E12998F8231C1CBA00DD2AB1 /* Info.plist */,
 			);
 			path = RMTableViewDataSourceTests;
+			sourceTree = "<group>";
+		};
+		E1299902231C1CFB00DD2AB1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				E129990A231C1CFB00DD2AB1 /* AppDelegate.swift */,
+				E1299906231C1CFB00DD2AB1 /* LaunchScreen.storyboard */,
+				E1299905231C1CFB00DD2AB1 /* Assets.xcassets */,
+				E1299903231C1CFB00DD2AB1 /* RMTableViewDataSourceViewController.swift */,
+				E129990B231C1CFB00DD2AB1 /* PersonTableViewCell.swift */,
+				E1299904231C1CFB00DD2AB1 /* PeopleSource.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		E129990D231C1CFB00DD2AB1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E129990E231C1CFB00DD2AB1 /* CellRetriever.swift */,
+				E129990F231C1CFB00DD2AB1 /* TableViewDataSource.swift */,
+				E1299910231C1CFB00DD2AB1 /* Search */,
+				E1299913231C1CFB00DD2AB1 /* CellIdentifiable.swift */,
+				E1299914231C1CFB00DD2AB1 /* TableViewContents.swift */,
+				E1299915231C1CFB00DD2AB1 /* CellBindable.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E1299910231C1CFB00DD2AB1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E1299911231C1CFB00DD2AB1 /* SearchSource.swift */,
+				E1299912231C1CFB00DD2AB1 /* UISearchBarSource.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +226,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E12998DE231C1CB900DD2AB1;
 			productRefGroup = E12998E9231C1CB900DD2AB1 /* Products */;
@@ -177,6 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1299918231C1CFB00DD2AB1 /* Assets.xcassets in Resources */,
+				E1299919231C1CFB00DD2AB1 /* LaunchScreen.storyboard in Resources */,
+				E1BB9AC5231C396F00A59FB3 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E129991F231C1CFB00DD2AB1 /* TableViewDataSource.swift in Sources */,
+				E1299922231C1CFB00DD2AB1 /* CellIdentifiable.swift in Sources */,
+				E129991E231C1CFB00DD2AB1 /* CellRetriever.swift in Sources */,
+				E1299923231C1CFB00DD2AB1 /* TableViewContents.swift in Sources */,
+				E129991B231C1CFB00DD2AB1 /* AppDelegate.swift in Sources */,
+				E1299916231C1CFB00DD2AB1 /* RMTableViewDataSourceViewController.swift in Sources */,
+				E1299924231C1CFB00DD2AB1 /* CellBindable.swift in Sources */,
+				E1299921231C1CFB00DD2AB1 /* UISearchBarSource.swift in Sources */,
+				E129991C231C1CFB00DD2AB1 /* PersonTableViewCell.swift in Sources */,
+				E1299920231C1CFB00DD2AB1 /* SearchSource.swift in Sources */,
+				E1299917231C1CFB00DD2AB1 /* PeopleSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +295,17 @@
 			targetProxy = E12998F3231C1CBA00DD2AB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1299906231C1CFB00DD2AB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1299907231C1CFB00DD2AB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E12998FA231C1CBA00DD2AB1 /* Debug */ = {
@@ -350,6 +442,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RMTableViewDataSource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +468,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RMTableViewDataSource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +485,7 @@
 		E1299900231C1CBA00DD2AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U97E6RE79Y;
 				INFOPLIST_FILE = RMTableViewDataSourceTests/Info.plist;
@@ -409,6 +504,7 @@
 		E1299901231C1CBA00DD2AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U97E6RE79Y;
 				INFOPLIST_FILE = RMTableViewDataSourceTests/Info.plist;
