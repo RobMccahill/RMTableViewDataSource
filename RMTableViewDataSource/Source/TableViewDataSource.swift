@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
+    ///The unfiltered contents of the data source. Note: This does not always reflect the contents of the table view, as a search in progress will return the filtered contents instead
     public var contents: TableViewContents<Model> {
         didSet {
             if !contentUpdateInProgress {
@@ -18,6 +19,7 @@ public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
         }
     }
     
+    ///The data source contents, filtered by the active query
     public var filteredContents = TableViewContents<Model>() {
         didSet {
             if !contentUpdateInProgress {
@@ -26,6 +28,7 @@ public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
         }
     }
     
+    ///The up to date contents of the data source - This will return the original contents if no search is active, or the filtered contents, if a search is active
     public var activeSource: TableViewContents<Model> {
         get {
             if let searchSource = searchSource, let activeQuery = searchSource.activeQuery, activeQuery != "" {
@@ -81,6 +84,7 @@ public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
         }
     }
     
+    ///Links the provided table view to this data source, registers the provided cell to the table view, and updates table view cells with the relevant model object
     public func link<C: CellBindable>(to tableView: UITableView, cellType: C.Type) where C.Model == Model {
         self.link(to: tableView, cellTypes: [cellType]) { cellRetriever, model, indexPath in
             let cell = cellRetriever.retreieve(cell: cellType, for: indexPath)
@@ -108,6 +112,7 @@ public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
         self.update(withContents: TableViewContents<Model>(sections: [TableViewSection<Model>(title: title, contents: contents)]))
     }
     
+    ///Assigns the new contents to the data source, and re-runs the filtering and sectioning processes assigned to the source
     public func update(withContents contents: TableViewContents<Model>) {
         contentUpdateInProgress = true
         

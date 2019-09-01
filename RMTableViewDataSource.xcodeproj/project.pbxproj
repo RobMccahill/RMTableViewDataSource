@@ -81,6 +81,7 @@
 		E12998DE231C1CB900DD2AB1 = {
 			isa = PBXGroup;
 			children = (
+				E1BB9AC4231C396F00A59FB3 /* Readme.md */,
 				E12998EA231C1CB900DD2AB1 /* RMTableViewDataSource */,
 				E12998F5231C1CBA00DD2AB1 /* RMTableViewDataSourceTests */,
 				E12998E9231C1CB900DD2AB1 /* Products */,
@@ -99,7 +100,6 @@
 		E12998EA231C1CB900DD2AB1 /* RMTableViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				E1BB9AC4231C396F00A59FB3 /* Readme.md */,
 				E129990D231C1CFB00DD2AB1 /* Source */,
 				E1299902231C1CFB00DD2AB1 /* Example */,
 				E12998EB231C1CB900DD2AB1 /* RMTableViewDataSource.h */,

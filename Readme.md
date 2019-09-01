@@ -12,8 +12,11 @@ let people = [
 ]
 
 let dataSource: TableViewDataSource<Person> = TableViewDataSource(contents: people)
+
 dataSource.link(to: tableView, cellType: PersonTableViewCell.self)
+
 dataSource.makeSearchable(with: searchBar, onValue: \.name, caseInsensitive: true)
+
 dataSource.sectionContents(by: \.name)
 ```
 
@@ -23,7 +26,9 @@ Currently, many common tasks associated with using a UITableView are lengthy and
 
 Similar issues exist for searching. Without this framework, the search bar would have to be wired to a custom function to filter the relevant collection, and the table view would have to be updated automatically. 
 
-A secondary array would also be needed to store the filtered results, and logic has to be implemented to swap between the full array, and the filtered array when it comes to actions like cell tapping, etc. With this solution, the `activeSource` property can be utilized to simplify the logic and minimize mistakes, and the search bar delegate methods are handled automatically.
+A secondary array would also be needed to store the filtered results, and logic has to be implemented to swap between the full array, and the filtered array when it comes to actions like cell tapping, etc. 
+
+With this solution, the `activeSource` property can be utilized to simplify the logic and minimize mistakes, and the search bar delegate methods are handled automatically.
 
 Finally, table view sectioning has always been a cumbersome feature to implement, with multiple collections required to handle section titles, as well as the nested collection nature needed to accomplish a very common feature.
 
@@ -46,11 +51,11 @@ extension PersonTableViewCell: CellIdentifiable {
 
 There are three types of registration, to reflect the various ways a cell can be defined.
 
-When defined in a storyboard, registration is automatically handled, so the registration method should be set to `.none`
+* When defined in a storyboard, registration is automatically handled, so the registration method should be set to `.none`
 
-When declared using a nib, the nib should be provided through the associated value `.nib(nib)`
+* When declared using a nib, the nib should be provided through the associated value `.nib(nib)`
 
-When declared programmatically, use the `.standard` option to ensure the cell is registered correctly
+* When declared programmatically, use the `.standard` option to ensure the cell is registered correctly
 
 If more than one cell type is needed, or more logic is needed when it comes to cell linking, utilize the following methods:
 
@@ -120,7 +125,7 @@ This is very much a work in progress - consider the initial version a proof of c
 
 Upcoming features:
 
-* Cocoapods support
+* Cocoapods, Carthage, and Swift Package Manager support
 * More sectioning options
 * More support for section sorting
 * Asynchronous searching
